@@ -73,37 +73,36 @@
         </div>
     </section>
 
-   <!-- LOKASI ACARA -->
-<section class="lokasi">
-    <div class="container-lokasi">
-        <p class="small-title">LOCATION</p>
-        <h2>Lokasi Acara</h2>
+    <!-- LOKASI ACARA -->
+    <section class="lokasi">
+        <div class="container-lokasi">
+            <p class="small-title">LOCATION</p>
+            <h2>Lokasi Acara</h2>
 
-        <div class="lokasi-box">
-            <h3>Gedung Pernikahan</h3>
-            <p class="alamat">
-                Jl. Contoh Alamat No. 123<br>
-                Bekasi, Jawa Barat
-            </p>
+            <div class="lokasi-box">
+                <h3>Gedung Pernikahan</h3>
+                <p class="alamat">
+                    Jl. Contoh Alamat No. 123<br>
+                    Bekasi, Jawa Barat
+                </p>
 
-            <!-- Opsional: Peta Google Maps Interaktif -->
-            <div class="map-embed">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.222384668!2d106.92383823525287!3d-6.241044439014163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c690610299f%3A0x301576d14feb9e0!2sBekasi%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
-                    width="100%" 
-                    height="200" 
-                    style="border:0; border-radius: 12px; margin-bottom: 15px;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
+                <div class="map-embed">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.222384668!2d106.92383823525287!3d-6.241044439014163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c690610299f%3A0x301576d14feb9e0!2sBekasi%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius: 12px; margin-bottom: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-lokasi">
+                    <span>📍</span> Buka Google Maps
+                </a>
             </div>
-
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-lokasi">
-                <span>📍</span> Buka Google Maps
-            </a>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- MEMPELAI -->
     <section class="mempelai">
@@ -145,7 +144,6 @@
         <div class="story">
             <div class="story-item">
                 <div class="story-year">2022</div>
-
                 <div class="story-content">
                     <h3>Pertama Bertemu</h3>
                     <p>
@@ -169,80 +167,72 @@
             <div class="story-item">
                 <div class="story-year">2026</div>
                 <div class="story-content">
-                   <h3>Lamaran</h3>
-                   <p>
-                       Kami memutuskan untuk melangkah
-                       ke jenjang yang lebih serius.
-                   </p>
+                    <h3>Lamaran</h3>
+                    <p>
+                        Kami memutuskan untuk melangkah
+                        ke jenjang yang lebih serius.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- GALERI FOTO -->
+    <!-- GALERI FOTO -->
+    <section class="galeri">
+        <p class="small-title">OUR MOMENTS</p>
+        <h2>Galeri</h2>
 
-<section class="galeri">
+        <div class="galeri-grid">
+            <div class="galeri-item">
+                <img src="assets/images/prewed1.jpeg" alt="Foto Prewedding 1">
+            </div>
+            <div class="galeri-item">
+                <img src="assets/images/prewed2.jpeg" alt="Foto Prewedding 2">
+            </div>
+            <div class="galeri-item">
+                <img src="assets/images/prewed3.jpeg" alt="Foto Prewedding 3">
+            </div>
+            <div class="galeri-item">
+                <img src="assets/images/prewed4.jpeg" alt="Foto Prewedding 4">
+            </div>
+        </div>
+    </section>
 
-    <p class="small-title">OUR MOMENTS</p>
+    <!-- RSVP -->
+    <section class="rsvp">
+        <p class="small-title">RSVP</p>
+        <h2>Konfirmasi Kehadiran</h2>
 
-    <h2>Galeri</h2>
+        <p class="rsvp-text">
+            Kami sangat berharap kehadiran dan doa restu
+            dari Bapak/Ibu/Saudara/i.
+        </p>
 
-    <div class="galeri-grid">
+        <form class="rsvp-form" id="formRsvp">
+            <input type="text" id="nama" placeholder="Nama Anda" required>
 
-       <div class="galeri-item">
-          <img src="assets/images/prewed1.jpeg" alt="Foto Prewedding 1">
-       </div>
-       <div class="galeri-item">
-          <img src="assets/images/prewed2.jpeg" alt="Foto Prewedding 2">
-       </div>
-       <div class="galeri-item">
-          <img src="assets/images/prewed3.jpeg" alt="Foto Prewedding 3">
-       </div>
-       <div class="galeri-item">
-          <img src="assets/images/prewed4.jpeg" alt="Foto Prewedding 4">
-       </div>
-    </div>
+            <select id="kehadiran" required>
+                <option value="">Konfirmasi Kehadiran</option>
+                <option value="Hadir">Saya akan hadir</option>
+                <option value="Tidak Hadir">Saya tidak dapat hadir</option>
+            </select>
 
-</section>
+            <input type="number" id="jumlah" placeholder="Jumlah Tamu" min="1" max="5" required>
 
-<!-- RSVP -->
+            <textarea id="ucapan" placeholder="Ucapan untuk kedua mempelai" rows="5"></textarea>
 
-<section class="rsvp">
+            <button type="submit">Kirim Konfirmasi</button>
+            <p id="pesanRsvp"></p>
+        </form>
+    </section>
 
-    <p class="small-title">RSVP</p>
-
-    <h2>Konfirmasi Kehadiran</h2>
-
-    <p class="rsvp-text">
-        Kami sangat berharap kehadiran dan doa restu
-        dari Bapak/Ibu/Saudara/i.
-    </p>
-
-    <form class="rsvp-form" id="formRsvp">
-
-    <input type="text" id="nama" placeholder="Nama Anda" required>
-
-    <select id="kehadiran" required>
-        <option value="">Konfirmasi Kehadiran</option>
-        <option value="Hadir">Saya akan hadir</option>
-        <option value="Tidak Hadir">Saya tidak dapat hadir</option>
-    </select>
-
-    <input type="number" id="jumlah" placeholder="Jumlah Tamu" min="1" max="5" required>
-
-    <textarea id="ucapan" placeholder="Ucapan untuk kedua mempelai" rows="5"></textarea>
-
-    <button type="submit">Kirim Konfirmasi</button>
-    <p id="pesanRsvp"></p>
-</form>
-</section>
     <!-- MUSIK -->
-<audio id="musik" loop>
-    <source src="assets/music/lagu.mp3" type="audio/mpeg">
-</audio>
-<button id="tombolMusik" class="tombol-musik">
-    ⏸️
-</button>
+    <audio id="musik" loop>
+        <source src="assets/music/lagu.mp3" type="audio/mpeg">
+    </audio>
+    <button id="tombolMusik" class="tombol-musik">
+        ⏸️
+    </button>
 
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
